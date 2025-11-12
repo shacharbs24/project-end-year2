@@ -1,0 +1,40 @@
+CONFIG initial_sun 200
+CONFIG level_type day
+
+WAIT 1
+ANNOUNCE Ultimate Challenge
+WAIT 1
+ANNOUNCE Brace Yourself
+WAIT 2
+ANNOUNCE Plant!
+WAIT 25
+
+SPAWN_GROUP random 7 2.5 regular_zombie conehead_zombie
+
+WAIT 25
+
+ANNOUNCE Wave 1
+FLAG
+SPAWN flag_zombie 1
+SPAWN_GROUP random 11 2.3 conehead_zombie buckethead_zombie
+
+WAIT 25
+
+ANNOUNCE Wave 2
+FLAG
+SPAWN flag_zombie 1
+SPAWN_GROUP random 14 2.1 buckethead_zombie peashooter_zombie gatling_pea_zombie
+
+WAIT 25
+
+ANNOUNCE Wave 3
+FLAG
+SPAWN flag_zombie 1
+SPAWN_GROUP random 17 1.9 buckethead_zombie gatling_pea_zombie
+
+WAIT 25
+
+ANNOUNCE Final Wave
+FLAG
+SPAWN flag_zombie 1
+SPAWN_GROUP random 20 1.8 gatling_pea_zombie zomboni zomboni

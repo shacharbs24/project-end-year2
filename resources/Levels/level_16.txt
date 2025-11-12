@@ -1,0 +1,40 @@
+CONFIG initial_sun 250
+CONFIG level_type night
+
+WAIT 1
+ANNOUNCE Ready
+WAIT 1
+ANNOUNCE Set
+WAIT 1
+ANNOUNCE Plant!
+WAIT 25
+
+SPAWN_GROUP random 8 2.4 regular_zombie conehead_zombie
+
+WAIT 25
+
+ANNOUNCE Wave 1
+FLAG
+SPAWN flag_zombie 1
+SPAWN_GROUP random 12 2.2 conehead_zombie buckethead_zombie
+
+WAIT 25
+
+ANNOUNCE Wave 2
+FLAG
+SPAWN flag_zombie 1
+SPAWN_GROUP random 15 2.0 buckethead_zombie peashooter_zombie gatling_pea_zombie
+
+WAIT 25
+
+ANNOUNCE Wave 3
+FLAG
+SPAWN flag_zombie 1
+SPAWN_GROUP random 18 1.8 buckethead_zombie gatling_pea_zombie
+
+WAIT 25
+
+ANNOUNCE Final Wave
+FLAG
+SPAWN flag_zombie 1
+SPAWN_GROUP random 22 1.7 gatling_pea_zombie zomboni zomboni

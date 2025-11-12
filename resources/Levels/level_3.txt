@@ -1,0 +1,32 @@
+CONFIG initial_sun 200
+CONFIG level_type night 
+
+# --- Start of level ---
+#Syntax: row, count, interval, zombie types
+
+WAIT 1
+
+ANNOUNCE Ready
+WAIT 1
+ANNOUNCE Set
+WAIT 1
+ANNOUNCE Plant!
+WAIT 25
+
+SPAWN_GROUP random 3 4.0 regular_zombie conehead_zombie
+
+WAIT 25 
+
+ANNOUNCE Final Wave
+FLAG 
+SPAWN flag_zombie 2
+SPAWN_GROUP random 4 4.0 regular_zombie  conehead_zombie buckethead_zombie
+
+WAIT 25
+
+ANNOUNCE Wave 2
+FLAG 
+SPAWN flag_zombie 2
+SPAWN_GROUP random 6 4.0 regular_zombie buckethead_zombie conehead_zombie peashooter_zombie
+
+
